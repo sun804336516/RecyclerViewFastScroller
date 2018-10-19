@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
@@ -77,6 +78,10 @@ public class FastScrollRecyclerView extends RecyclerView {
 
     public void setVerticalLinearLayoutmanager() {
         setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
+    }
+
+    public void setVerticalGridLayoutManager(int count) {
+        setLayoutManager(new GridLayoutManager(getContext(), count, LinearLayoutManager.VERTICAL, false));
     }
 
     public FastScroller getFastScroller() {

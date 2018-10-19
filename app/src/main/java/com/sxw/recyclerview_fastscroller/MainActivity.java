@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.withPopTextvIew:
                 startActivity(new Intent(this, FastScrollerActivity2.class));
                 break;
+            case R.id.GridwithPopTextvIew:
+                startActivity(new Intent(this, FastScrollerActivity3.class));
+                break;
         }
     }
 }
