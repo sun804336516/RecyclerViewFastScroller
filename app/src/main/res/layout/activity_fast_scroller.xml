@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sxw.recyclerview_fastscroller.fast_scroller.FastScrollRecyclerView
+        android:id="@+id/fastScrollRcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:CanFastScroll="true"
+        app:HorizontalThumbDrawable="@drawable/thumb_bar_black"
+        app:HorizontalTrackDrawable="@drawable/track_bar"
+        app:MinScreenCountScrollerShow="4"
+        app:VerticalThumbDrawable="@drawable/thumb_bar_black"
+        app:VerticalTrackDrawable="@drawable/track_bar"/>
+</LinearLayout>
